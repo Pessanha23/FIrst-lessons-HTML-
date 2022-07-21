@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+	var maxtent = 3;
+	var tent = 1;
+
+	while( tent <= maxtent) {
+
+ 		var loginInformado = prompt("Informe seu login");
+    	var senhaInformada = prompt("Informe sua senha");
+
+    	if (loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+    		alert("Bem-vindo ao sistema, " + loginInformado);
+    		tent = maxtent;
+
+    	}else{
+
+    		if (tent == 3) {
+    			alert("Número permitido de tentativas ultrapassado");
+
+    		}else{
+    			alert("Login inválido. Tente novamente")
+    		}
+
+
+    	}
+
+		tent = tent + 1
+
+	}
+
+
+
+</script>

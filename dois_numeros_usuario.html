@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+
+<script>
+	function pulalinha() {
+		document.write("<br>")
+		// body...
+	}
+	function mostra(frase) {
+		document.write(frase)
+		pulalinha()
+		// body...
+	}
+	var A = parseInt(prompt("escolha um número")) 
+	var B =  parseInt(prompt("escolha o seu segundo número")) 
+	var C = parseInt(prompt("escolha o seu terceiro número"))
+
+
+	if (A > B && A > C) {
+	if (B > C) 
+		mostra(A + B + C); 
+	} else { 
+		mostra(A + (">") + C + (">") + B);
+	}
+
+	if (B > A && B > C) {
+	if (A > C) 
+		mostra(B + (">") + A + (">") + C) ;
+	} else { 
+		mostra(B + (">") + C + (">") + A);
+	} 	
+
+	if (C > A && C > B) {
+	if (A >B) 
+		mostra(C+ (">") + A + (">") + B) ;
+	} else { 
+		mostra(C + (">") + B + (">") + A);
+	
+}
+</script>

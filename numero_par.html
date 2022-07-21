@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+var lime = parseInt(prompt("Digite o seu valor"))
+var contador = 100;
+
+while  (contador <= lime) {
+
+		mostra(contador);
+		contador = contador + 100;
+
+}
+mostra("FIM");
+
+
+</script>

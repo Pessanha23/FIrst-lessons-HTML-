@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+var trintou = 30
+
+while( trintou <= 40) {
+
+ 	if (trintou == 33) {
+ 		trintou	= trintou + 1;
+	}
+
+	if ( trintou == 37) {
+		trintou = trintou +1;
+	}
+	else {
+		mostra(trintou);
+		trintou = trintou + 1;
+	}
+
+}
+
+mostra("FIM")
+
+</script>
+
+	

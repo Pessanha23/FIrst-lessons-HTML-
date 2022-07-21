@@ -1,0 +1,65 @@
+<meta charset="utf-8">
+
+<script>
+	function pulalinha() {
+		document.write("<br>")
+		// body...
+	}
+	function mostra(frase) {
+		document.write(frase)
+		pulalinha()
+		// body...
+	}
+
+	var A = parseInt(prompt("escolha um número")) 
+	var B =  parseInt(prompt("escolha o seu segundo número")) 
+	var C = parseInt(prompt("escolha o seu terceiro número"))
+ 	var mdt = 99
+ 	var mnt = 0
+ 	var meio = 0
+
+	if (A > B && A > C) {
+		  mdt = A
+	}
+
+	if (B > A && B > C) {
+		mdt = B
+	}
+
+	if (C > A && C > B){
+		mdt = C
+	}
+
+	mostra(("o maior número de todos é ") + mdt)
+
+	if (A < B && A < C) {
+		  mnt = A
+	}
+
+	if (B < A && B < C) {
+		mnt = B
+	}
+
+	if (C < A && C < B){
+		mnt = C
+	}
+
+	mostra(("o menor número de todos é ") + mnt)
+	if (mnt < A && A < mdt) {
+		meio = A
+	}
+	
+	if (mnt < B && B < mdt) {
+		meio = B
+	}
+
+	if (mnt < C && C < mdt) {
+		meio = C
+	}
+	
+
+	mostra(("o meio número de todos é ") + meio)
+
+
+
+</script>

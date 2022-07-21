@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+var limite = parseInt(prompt("Que número vc quer que diminua?"))
+var contador = limite;
+
+while (0 <= contador) {
+
+		mostra(contador);
+		contador = contador -1;
+}
+
+mostra("FIm")	
+
+	</script>

@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+  var time = prompt("Qual seu time?")
+
+  var tjs = 15 * 2;
+
+  var vitórias = parseInt(prompt("Entre com o número de vitórias."));
+
+  var empate = parseInt(prompt("Entre com o número de empates."));
+
+  var pontos = (vitórias * 3) + empate;
+
+  var totalponto = (pontos + tjs)
+
+  mostra("Os pontos do " + time + " são " + totalponto);
+
+</script>
+
+
+
+

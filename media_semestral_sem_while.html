@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+	}
+
+    function mostra(frase) {
+
+        document.write(frase)
+        pulaLinha();
+	}
+
+	function totale(x1)
+	
+	var nota1 = parseInt(prompt("Digite nota 1"));
+	var nota2 = parseInt(prompt("Digite nota 2"));
+	var nota3 = parseInt(prompt("Digite nota 3"));
+	var nota4 = parseInt(prompt("Digite nota 4"));
+
+		if (nota1 > 10) {
+			mostra("Erro");
+				return nota1;
+
+		}
+		if (nota2 > 10) {
+			mostra("Erro")
+				return nota2;
+		}
+
+		if (nota3 > 10) {
+			mostra("Erro")
+				return nota3;
+		}
+
+		if (nota4 > 10) {
+			mostra("Erro")
+				return nota4;
+		}
+
+	var soma = ((nota1 + nota2 + nota3 + nota4) / 4)
+
+		if (6 <= soma && soma <= 10 ) {
+			mostra(("APROVADO COM MÉDIA ") + soma)
+		
+		}else{
+			mostra(("REPROVADO COM MÉDIA ") + soma)
+			 
+			 }
+
+
+</script>			 
